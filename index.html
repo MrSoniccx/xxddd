@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Acceso a elementos DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+          <label for="nombre">Ingrese un nombre:</label>
+          <input type="text" id="nombre" />
+
+        <select id="seccion">
+          
+          <option value="general">General</option>
+          <option value="plata">Plata</option>
+          <option value="oro">Oro</option>
+          <option value="vip">VIP</option>
+        </select>
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" readonly />
+        <div class="panel">
+          <div class="row">
+            <input type="button" value="Select" class="column" id="btnSelect"/>
+            <input type="button" value="+ Seccion" class="column" id="btnOpcion"/>
+          </div>
+          <div class="row">
+            <input type="button" value="Multiplicar" class="column" id="btnMultiplicar"/>
+            <input type="button" value="Dividir" class="column" id="btnDividir" />
+          </div>
+          <div class="row">
+              <input type="button" value="Borrar" class="column" id="btnBorrar"/>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
