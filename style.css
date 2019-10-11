@@ -1,4 +1,9 @@
 
+.cajitas{
+  display: flex;
+  justify-content: center;
+}
+
 input, label {
   display: block;
   width: 100%;

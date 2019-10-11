@@ -1,5 +1,7 @@
 var btnSelect = document.querySelector('#btnSelect')
 var btnOpcion = document.querySelector('#btnOpcion')
+var btnLista = document.querySelector('#btnLista')
+var btnTable = document.querySelector('#btnTable')
 
 btnSelect.addEventListener('click', () =>
 {
@@ -18,4 +20,25 @@ btnOpcion.addEventListener('click', () => {
     newOp.text = nombre
 
     opcion.add(newOp)
+})
+
+btnLista.addEventListener('click', () => {
+    let nombre = document.querySelector('#nombre').value
+    let lista = document.querySelector('#lista')
+    let newItem = document.createElement('li')
+
+    newItem.textContent = nombre
+    
+
+    lista.appendChild(newItem)
+})
+
+btnTable.addEventListener('click', () =>{
+    let nombre = document.querySelector('#nombre').value
+    let tabla = document.querySelector('#tablita')
+    let renglon = tabla.insertRow(-1)
+    let celda = renglon.insertCell(0)
+
+    celda.textContent = nombre
+
 })
